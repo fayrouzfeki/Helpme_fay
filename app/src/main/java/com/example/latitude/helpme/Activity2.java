@@ -12,17 +12,12 @@ import android.support.v7.widget.Toolbar;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.latitude.helpme.R;
-import com.example.latitude.helpme.OneFragment;
-import com.example.latitude.helpme.TreeFragment;
-import com.example.latitude.helpme.TwoFragment;
-
 
 /**
  * Created by LATITUDE on 26/03/2017.
  */
 
-public class Activité2 extends AppCompatActivity {
+public class Activity2 extends AppCompatActivity {
 
         private Toolbar toolbar;
         private TabLayout tabLayout;
@@ -62,7 +57,7 @@ public class Activité2 extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new OneFragment(), "ONE");
         adapter.addFragment(new TwoFragment(), "TWO");
-        adapter.addFragment(new TreeFragment(), "THREE");
+        adapter.addFragment(new ThreeFragment(), "THREE");
         viewPager.setAdapter(adapter);
     }
 

@@ -13,9 +13,9 @@ import android.view.ViewGroup;
 import com.example.latitude.helpme.R;
 
 
-public class TreeFragment extends Fragment{
+public class ThreeFragment extends Fragment{
 
-    public TreeFragment() {
+    public ThreeFragment() {
         // Required empty public constructor
     }
 
