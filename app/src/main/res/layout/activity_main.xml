@@ -23,7 +23,8 @@
         android:layout_alignBaseline="@+id/inscription"
         android:layout_alignBottom="@+id/inscription"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="goToThePageLogin7"/>
 
     <Button
         android:text="inscription"

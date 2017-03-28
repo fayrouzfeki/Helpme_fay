@@ -21,6 +21,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-}
-}
 
+    }
+
+    public void goToThePageLogin7(View view) {
+        Intent intent = new Intent(this, page7_connexion.class);
+        startActivity(intent);
+
+    }
+
+}
