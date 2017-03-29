@@ -2,12 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.latitude.helpme">
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/MyMaterialTheme" >
+        android:theme="@style/MyMaterialTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -15,8 +20,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity2">
-        </activity>
+        <activity android:name=".Activity2" />
+        <activity android:name=".page_Inscr1" />
+        <activity android:name=".page_inscri2" />
+        <activity android:name=".page_Inscri3" />
+        <activity android:name=".page_Inscri4" />
+        <activity
+            android:name=".page7_connexion"
+            android:label="@string/title_activity_page7_connexion"></activity>
     </application>
 
 </manifest>
