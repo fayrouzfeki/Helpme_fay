@@ -1,33 +1,67 @@
 package com.example.latitude.helpme;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.appindexing.Thing;
+import com.google.android.gms.common.api.GoogleApiClient;
 
 public class MainActivity extends AppCompatActivity {
+
+    // private SwipeGestureDetector gestureDetector;
+    private static int SPLASH_TIME_OUT = 4000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final Button loginButton = (Button) findViewById(R.id.inscription);
-        loginButton.setOnClickListener(new View.OnClickListener() {
 
+        new Handler().postDelayed(new Runnable() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, page_Inscr1.class);
-                startActivity(intent);
+            public void run() {
+                Intent suivant = new Intent(MainActivity.this, Activity1.class);
+                startActivity(suivant);
+                finish();
             }
-        });
+        }, SPLASH_TIME_OUT);
+        //instaciation swipe
+        //gestureDetector = new SwipeGestureDetector(this);
 
     }
 
-    public void goToThePageLogin7(View view) {
-        Intent intent = new Intent(this, page7_connexion.class);
-        startActivity(intent);
-
+    /*public boolean dispatchTouchEvent(MotionEvent event)
+    {
+        return gestureDetector.onTouchEvent(event);
     }
+
+    public void onSwipe(SwipeGestureDetector.SwipeDirection direction)
+    {
+        String message ="";
+        switch(direction)
+        {
+            case LEFT_TO_RIGHT:
+                message = "lest to right swipe";
+                break;
+            case RIGHT_TO_LEFT:
+                message = "right to left swipe";
+                break;
+            case TOP_TO_BOTTOM:
+                message = "top to bottom swipe";
+                break;
+            case BOTTOM_TO_TOP:
+                message = "bottom to top swipe";
+                break;
+        }
+        Toast.makeText(this,message,Toast.LENGTH_SHORT).show();
+    }*/
 
 }
