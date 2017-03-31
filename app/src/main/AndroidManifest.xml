@@ -6,6 +6,11 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    //google play exige les users pr l'importance du détecteur d'empreintes digitales ds leur devices
+    <uses-feature android:name="android.hardware.fingerprint"
+        android:required="false"/>
+    <uses-permission
+        android:name="android.permission.USE_FINGERPRINT" />
 
     <application
         android:allowBackup="true"
@@ -21,7 +26,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activity1" />
-        <activity android:name=".SwipeGestureDetector" />
+        <activity android:name=".EmpreintActivity" />
+        <activity android:name=".EmpreintActivity2" />
         <activity android:name=".Activity2" />
         <activity android:name=".page_Inscr1" />
         <activity android:name=".page_inscri2" />
