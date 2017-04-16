@@ -13,14 +13,12 @@ public class page_Inscri4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page__inscri4);
 
-        final Button loginButton = (Button) findViewById(R.id.enregistrer);
-        loginButton.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(page_Inscri4.this, EmpreintActivity.class);
-                startActivity(intent);
-            }
-        });
+    }
+
+    public  void goToTheEmprint(View view){
+        Intent intent = new Intent(this, EmpreintActivity.class);
+        startActivity(intent);
+
     }
 }
