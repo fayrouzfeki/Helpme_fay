@@ -34,4 +34,10 @@
         Place your fingertip on the Home button to verify your identity
     </string>
     <string name="title_activity_maps">Map</string>
+    <string-array name="advice_names">
+        <item>Brûlures</item>
+        <item>Coup de chaleur </item>
+        <item>Blessure</item>
+
+    </string-array>
 </resources>
