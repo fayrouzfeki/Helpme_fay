@@ -4,6 +4,7 @@ package com.example.latitude.helpme;
  * Created by LATITUDE on 20/03/2017.
  */
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -30,5 +31,5 @@ public class OneFragment extends Fragment{
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_one, container, false);
     }
-
+    
 }
