@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "755412205396",
+    "firebase_url": "https://helpme-4c670.firebaseio.com",
+    "project_id": "helpme-4c670",
+    "storage_bucket": "helpme-4c670.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755412205396:android:b031f3bfeaae9b21",
+        "android_client_info": {
+          "package_name": "tn.iit.helpme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755412205396-bst05kjt74sbk8q6h6dtoeh8v9ov1uau.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAinm2F60SHc075OTdD7iIibTmrfZr_mo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755412205396:android:e55716f73b344086",
+        "android_client_info": {
+          "package_name": "com.example.latitude.helpme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755412205396-bst05kjt74sbk8q6h6dtoeh8v9ov1uau.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAinm2F60SHc075OTdD7iIibTmrfZr_mo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
