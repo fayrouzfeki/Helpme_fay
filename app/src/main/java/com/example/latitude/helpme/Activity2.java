@@ -23,8 +23,8 @@ public class Activity2 extends AppCompatActivity {
         private TabLayout tabLayout;
         private ViewPager viewPager;
         private int[] tabIcons = {
-                R.drawable.ecg_chart,
-                R.drawable.liste,
+                R.drawable.alert,
+                R.drawable.heart,
                 R.drawable.tra
         };
 

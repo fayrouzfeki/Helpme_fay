@@ -101,6 +101,15 @@
                         android:layout_marginTop="16dp"
                         android:text="Connecter"
                         android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/entrer"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Enter"
+                        android:onClick="entrer"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
             </ScrollView>

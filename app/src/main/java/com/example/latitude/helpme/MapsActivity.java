@@ -51,7 +51,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-        mo = new MarkerOptions().position(new LatLng(0, 0)).title("My Current Location");
+        mo = new MarkerOptions().position(new LatLng(34.730185, 10.739231)).title("My Current Location");
         if (Build.VERSION.SDK_INT >= 23 && !isPermissionGranted()) {
             requestPermissions(PERMISSIONS, PERMISSION_ALL);
         } else requestLocation();
@@ -81,7 +81,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // Add a marker in Sydney and move the camera
         LatLng sydney1 = new LatLng(34.740849, 10.750266);
         final Marker terreHauteMarker = googleMap.addMarker(new MarkerOptions().position(sydney1).title("Hôpital Hédi Chaker").icon(BitmapDescriptorFactory.fromResource(R.drawable.marqueur)));
-
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney1, 14f));
 
         LatLng sydney2 = new LatLng(34.741703, 10.752128);
         googleMap.addMarker(new MarkerOptions().position(sydney2).title("Banque du sang").icon(BitmapDescriptorFactory.fromResource(R.drawable.marqueur)));

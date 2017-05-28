@@ -3,6 +3,8 @@ package com.example.latitude.helpme;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -345,6 +347,11 @@ public class page7_connexion extends AppCompatActivity implements LoaderCallback
             mAuthTask = null;
             showProgress(false);
         }
+    }
+
+    public void entrer(View view)
+    {
+        Intent intent = new Intent(page7_connexion.this, Activity2.class);
     }
 }
 
