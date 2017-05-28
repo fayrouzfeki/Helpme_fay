@@ -30,7 +30,7 @@ public class SchemaActivity extends AppCompatActivity {
 
             @Override
             public void onProgress(List<PatternLockView.Dot> progressPattern) {
-                Log.d(getClass().getName(), "Pattern progress: " +
+                Log.d(getClass().getName(), "Pattern rogress: " +
                         PatternLockUtils.patternToString(mPatternLockView, progressPattern));
             }
 
