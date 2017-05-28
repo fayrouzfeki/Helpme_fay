@@ -10,9 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent suivant = new Intent(MainActivity.this, Activity1.class);
+                Intent suivant = new Intent(MainActivity.this, SignupActivity.class);
                 startActivity(suivant);
                 finish();
             }
