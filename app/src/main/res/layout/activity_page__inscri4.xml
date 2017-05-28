@@ -57,7 +57,8 @@
                     android:text="schema"
                     android:layout_width="wrap_content"
                     android:layout_height="112dp"
-                    android:id="@+id/radioButton" />
+                    android:id="@+id/radioButton"
+                    android:onClick="goToTheSchema"/>
 
                 <RadioButton
                     android:text="Déverrouillage empreinte digitale"

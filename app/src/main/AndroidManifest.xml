@@ -43,11 +43,17 @@
         <activity android:name=".Activity1" />
         <activity android:name=".EmpreintActivity" />
         <activity android:name=".EmpreintActivity2" />
+
         <activity android:name=".Activity2" />
         <activity android:name=".page_Inscr1" />
         <activity android:name=".page_inscri2" />
         <activity android:name=".page_Inscri3" />
         <activity android:name=".page_Inscri4" />
+        <activity android:name=".SchemaActivity" />
+
+
+
+
         <activity
             android:name=".page7_connexion"
             android:label="@string/title_activity_page7_connexion" />
